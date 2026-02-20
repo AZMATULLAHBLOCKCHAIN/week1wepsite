@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+  Services Page
+  - Responsive services grid using CSS Grid
+  - Each card contains an image + text
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | NovaTech Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-flex">
+      <a class="brand" href="index.html">NovaTech<span class="brand-dot">.</span></a>
+      <nav class="nav" aria-label="Main Navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="services.html">Services</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <h1>Services</h1>
+        <p class="muted">A responsive services grid using CSS Grid.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="service-grid">
+          <article class="card service-card">
+            <img src="IMG2.JPG" alt="Web design service" />
+            <div class="service-body">
+              <h3>HOT SPICESE</h3>
+              <p>Modern business UI sections with clean typography.</p>
+              <a class="link" href="contact.html">Request quote →</a>
+            </div>
+          </article>
+
+          <article class="card service-card">
+            <img src="IMG3.JPG" alt="Responsive layout service" />
+            <div class="service-body">
+              <h3>DRY FRUITS</h3>
+              <p>Mobile-first layout using Flexbox + Grid.</p>
+              <a class="link" href="contact.html">Request quote →</a>
+            </div>
+          </article>
+
+          <article class="card service-card">
+            <img src="IMG.JPG" alt="Performance and SEO service" />
+            <div class="service-body">
+              <h3>CHILLIS <SOUCES></SOUrce></h3>
+              <p>Best practices for readable, fast-loading pages.</p>
+              <a class="link" href="contact.html">Request quote →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Layout challenge</h2>
+          <p class="muted">Try changing the grid columns in CSS and see the result.</p>
+        </div>
+
+        <div class="card">
+          <ol class="steps">
+            <li>Open <strong>style.css</strong></li>
+            <li>Find <code>.service-grid</code> rules</li>
+            <li>Change <code>minmax(240px, 1fr)</code> to <code>minmax(320px, 1fr)</code></li>
+            <li>Refresh the browser</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>© 2026 NovaTech Solutions. Demo for Web Development Class.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+  Project: Responsive Business Website (HTML + CSS)
+  Goal:
+  - Convert a portfolio idea into a responsive business site
+  - Use Flexbox + Grid for layout
+  - Practice responsive breakpoints
+
+  STUDENT TIP:
+  - Open this file in browser
+  - Open style.css in VS Code
+  - Change values and refresh the browser
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Makes the website responsive on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALI DRY FRUITS | Responsive Business MARKET Hyderabad</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER (Flexbox) ===== -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <a class="brand" href="index.html" aria-label="ALI DRY FRUITS">
+        ALI DRY FRUITS<span class="brand-dot">.</span>
+      </a>
+
+      <!-- Nav is a flex row; wraps on smaller screens -->
+      <nav class="nav" aria-label="Main Navigation">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO (Grid) ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>ABUBAKAR DRY FRUITS AND ABULHASAN TOWER MARKET Hyderabad ALL PAKISTAN DELEVERY</h1>
+          <p>
+            This demo shows how to create a full responsive layout using
+            <strong>Flexbox</strong> and <strong>CSS Grid</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="services.html">View Services</a>
+            <a class="btn btn-outline" href="contact.html">Get a Quote</a>
+          </div>
+
+          <ul class="checks">
+            <li>Mobile-first layout</li>
+            <li>Grid + Flexbox combined</li>
+            <li>Clean sections & cards</li>
+          </ul>
+        </div>
+
+        <div class="hero-media">
+          <img src="img1.jpg" alt="Business website hero banner" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRUST BAR (Flexbox) ===== -->
+    <section class="trust">
+      <div class="container trust-flex">
+        <p class="trust-title">Trusted by students & clients</p>
+        <div class="trust-badges">
+          <span class="badge">Fast</span>
+          <span class="badge">Responsive</span>
+          <span class="badge">Clean UI</span>
+          <span class="badge">Best Practices</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES (Grid Cards) ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>What we deliver</h2>
+          <p class="muted">Three example business features using reusable cards.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Responsive Layout</h3>
+            <p>Works smoothly on mobile, tablet, and desktop screens.</p>
+          </article>
+
+          <article class="card">
+            <h3>Modern Sections</h3>
+            <p>Hero, services, testimonials, and contact sections included.</p>
+          </article>
+
+          <article class="card">
+            <h3>Clean Code</h3>
+            <p>Semantic HTML + commented CSS for easy learning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS (Grid) ===== -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Client feedback</h2>
+          <p class="muted">Simple testimonial layout using Grid.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card testimonial">
+            <p>“Great layout! The site looks professional on every screen size.”</p>
+            <div class="who">
+              <span class="avatar">A</span>
+              <div>
+                bacground image"IMG13.JPG "
+                <strong>AZMATULLAH KHAN</strong>
+                <div class="muted small">Student</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card testimonial">
+            <p>“The Flexbox + Grid approach is easy to understand and edit.”</p>
+            <div class="who">
+              <span class="avatar">S</span>
+              <div>
+                <strong>AZMATULLAH KHAN</strong>
+                <div class="muted small">Student</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+      <div class="container cta-flex">
+        <div>
+          <h2>Ready to practice?</h2>
+          <p class="muted">Open ASSIGNMENT.md and complete Q1 (HTML & CSS).</p>
+        </div>
+        <a class="btn" href="contact.html">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>© 2026 NovaTech Solutions. Demo for Web Development Class.</p>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

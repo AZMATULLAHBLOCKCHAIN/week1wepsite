@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+  About Page
+  - Two-column layout on desktop (Grid)
+  - Stacks into one column on mobile
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | ALI DRY FRUIT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-flex">
+      <a class="brand" href="index.html">NovaTech<span class="brand-dot">.</span></a>
+      <nav class="nav" aria-label="Main Navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <h1>About</h1>
+        <p class="muted">Two-column layout using Grid + responsive stacking.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-grid">
+        <div>
+          <h2>Our mission</h2>
+          <p>
+            We help students learn modern HTML & CSS by building real websites.
+            This demo uses reusable components and clean spacing.
+          </p>
+
+          <h3>What students practice</h3>
+          <ul class="checks">
+            <li>Navigation with Flexbox</li>
+            <li>Cards and sections with Grid</li>
+            <li>Responsive breakpoints</li>
+            <li>Accessible forms</li>
+          </ul>
+        </div>
+
+        <div class="about-media">
+          <img src="img1.jpg" alt="Team working illustration" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Mini FAQ</h2>
+          <p class="muted">Simple blocks (no JavaScript).</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Why use Flexbox?</h3>
+            <p>Flexbox is best for 1D layouts like header/nav rows.</p>
+          </article>
+          <article class="card">
+            <h3>Why use Grid?</h3>
+            <p>Grid is best for 2D layouts like sections, galleries, and cards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>© 2026 NovaTech Solutions. Demo for Web Development Class.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
